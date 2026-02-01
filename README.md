@@ -52,6 +52,7 @@ Key arguments:
 ## Notes
 - The dataset should be in data/flowers with train/valid/test subfolders.
 - Update paths as needed for your environment.
+- Link to data set used: https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html
 
 ## License
 For educational use.
