@@ -19,11 +19,15 @@ This project trains a deep learning image classifier to recognize 102 flower cat
 - PyTorch + torchvision
 
 Install dependencies (example):
-- pip install torch torchvision
+```bash
+pip install torch torchvision
+```
 
 ## Training
 From the src/ directory:
-- python train.py --data-dir ../data/flowers --epochs 5 --learning-rate 0.001
+```bash
+python train.py --data-dir ../data/flowers --epochs 5 --learning-rate 0.001
+```
 
 Key arguments:
 - --data-dir: path to data/flowers
@@ -35,7 +39,9 @@ Key arguments:
 
 ## Prediction
 From the src/ directory:
-- python predict.py --img-path ../data/flowers/valid/1/image_06765.jpg --checkpoint-path ./trained_model.pth
+```bash
+python predict.py --img-path ../data/flowers/valid/1/image_06765.jpg --checkpoint-path ./trained_model.pth
+```
 
 Key arguments:
 - --img-path: path to image
