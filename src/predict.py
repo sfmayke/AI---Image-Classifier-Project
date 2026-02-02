@@ -1,7 +1,8 @@
 import argparse
 import logging
 
-from model import load_checkpoint, predict
+from models import load_checkpoint
+from inference import predict
 from utility import get_device, label_mapping
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")

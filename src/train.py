@@ -2,7 +2,7 @@ import argparse
 import logging
 
 import torch
-from model import create_model, save_model, train_model
+from models import create_model, save_model, train_model
 from utility import dataset_load, get_device, label_mapping
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")
@@ -43,7 +43,6 @@ def main():
 
     device = get_device(args.gpu)
     dataloaders, image_datasets = dataset_load(args.data_dir, args.batch_size)
-    labels = label_mapping(args.labels_dir)
     model = create_model(device)
 
     # Train the model
